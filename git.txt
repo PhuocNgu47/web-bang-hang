@@ -1,0 +1,9 @@
+
+
+git add <file> ---> git satus-->
+file đang làm việc..................Staging Area.....................commit
+................git add <file>---->----git commit -m "nội dung "--->
+
+
+git log : xem commi t 
+-----------------------
