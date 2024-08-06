@@ -3,49 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bán áo thun</title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <title>Bán áo thunn</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.6.0-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div class="top-bar">
-            <div class="top-bar-left">
-                <a href="#"><img src="images/logo.png" alt="Logo"></a>
+    <div class="app">
+        <header class="header">
+            <div class="grid">
+                
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        
+                        <li class="header__navbar-item header__navbar-item">
+                            <a href="" class="header__navbar-icon-link">
+                                <span class="hearder__navbar-title--no-pointer">
+                                Kênh Người Bán
+                                </span>
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item">
+                            Tải ứng dụng
+
+                            <!-- Header QR Code-->
+                            <div class="header__qr">
+                                <img src="./assets/images/qr_fb.jpg" alt="QR CODE" class="header__qr-img">
+                                <div class="header__qr-apps">
+
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/images/golleplay.png" alt="" class="header__qr-tai-img">
+                     
+                                  </a>
+
+                                    <a href="" class="header__qr-link">
+                                    <img src="./assets/images/appsto.png" alt="" class="header__qr-tai-img">
+
+                                    </a>
+
+                                    
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--separate">
+                            <span class="hearder__navbar-title--no-pointer">
+                                Kết nối
+                                </span>
+                            <a href="" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-facebook"></i>
+                            </a>
+
+                            <a href="#" class="header__navbar-icon-link">
+                                <i class="header__navbar-icon fa-brands fa-youtube" aria-label="YouTube"></i>
+                            </a>
+
+                            <a href="" class="header__navbar-icon-link" >
+                            <i class="header__navbar-icon fa-brands fa-square-instagram"></i>
+                            </a>
+                            
+
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item--has-notify">
+                            <a href="#" class="header__navbar-item-link">
+                                
+                                <i  class="header__navbar-icon fa-solid fa-bell"></i>
+                                Thông Báo
+                            </a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets//images/xinhh.jpg" alt="" class="header__notify-img">
+                                            
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name"> Tên Thông Báo</span>
+                                                <span class="header__notify-descriotion">Mo tả thông báo</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets//images/xinhh.jpg" alt="" class="header__notify-img">
+                                            
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name"> Tên Thông Báo00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</span>
+                                                <span class="header__notify-descriotion">Mo tả thông báo000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notify-item">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets//images/xinhh.jpg" alt="" class="header__notify-img">
+                                            
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name"> Tên Thông Báo</span>
+                                                <span class="header__notify-descriotion">Mo tả thông báo ..............................................................</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    
+                                </ul>
+                                <footer class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="#" class="header__navbar-item-link">
+                                
+                                <i class="header__navbar-icon fa-regular fa-circle-question"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--strong">
+                            Đăng kí
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--strong">
+                            Đăng nhập
+                        </li>
+                        
+                    </ul>
+                </nav>
+
+                <!--Header with search-->
+                <div class="header-with-search">
+                    <div class="header__logo">
+                        <img alt="Logo" class="header__logo-img" id="my-out-img" src=  "./assets/images/Thiết kế chưa có tên.png" >
+                    </div>
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
+                            <!-- Search history-->
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header_search-history-list">
+                                    <li class="header_search-history-item">
+                                        <a href=""> áo ba lỗ</a>
+                                    </li>
+                                    <li class="header_search-history-item">
+                                        <a href=""> áo polo sang trọng</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header__search-select">
+                            <span class="header__search-select-label">  Trong Shop</span>
+                            <i class="header__search-select-label-icon  fa-solid fa-chevron-down"></i>
+                        
+                            <!-- <ul class="header__search--option">
+                                <li class="header__search--option-item">
+                                    <span> Trong Shop</span>
+                                    <i class="fas da-check" ></i>
+                                </li>
+                                <li class="header__search--option-item">
+                                    <span> Trong Shop</span>
+                                    <i class="fas da-check" ></i>
+                                </li>
+
+                            </ul> -->
+                        </div>
+                        <button class="header__search__search-btn"  > 
+                            <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                    
+
+                    <div class="header__cart">
+                        <i class="header__search-select-icon header__cart-icon fas fa-cart-shopping"></i>
+                    </div>
+
+                </div>
             </div>
-            <div class="top-bar-right">
-                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-                <span class="phone-number">+84888668888</span>
-            </div>
+        </header>
+        <div class="container">
+
         </div>
-        <nav>
-            <ul>
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="#">Thời trang</a></li>
-                <li><a href="#">Tính năng</a></li>
-                <li><a href="#">Liên hệ</a></li>
-                <li><a href="#">Giới thiệu</a></li>
-            </ul>
-            <div class="auth-links">
-                <a href="../Screen/register.html">Đăng ký</a> / <a href="../Screen/login.html">Đăng nhập</a>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="hero">
-            <div class="hero-text">
-                <h1>Phong Cách Mới</h1>
-                <p>Trông thật phong cách với áo thun trắng mới</p>
-                <a href="#" class="shop-now">Mua ngay</a>
-            </div>
-            <div class="hero-image">
-                <img src="../images/áothun.jpg" alt="Áo thun nam">
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Cửa hàng bán áo. Mọi quyền được bảo lưu.</p>
-    </footer>
+        <footer class="footer">
+
+        </footer>
+    </div>
 </body>
+</body> 
 </html>
