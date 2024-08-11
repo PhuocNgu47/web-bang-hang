@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li {
+        list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 50px;
+    height: 70px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000; /* Ensure header is on top */
+}
+.logo img {
+    max-height: 70px;
+}
+.menu {
+    display: flex;
+    flex: 3;
+    justify-content: center;
+    position: relative;
+        }
+.menu > li {
+    padding: 0 20px;
+    font-size: 16px;
+    position: relative;
+}
+.menu > li:hover .sub-menu {
+    visibility: visible;
+    top: 30px;
+    z-index: 999; /* Ensure sub-menu is on top */
+}
+.menu li a {
+    font-weight: bold !important;
+    display: block;
+    line-height: 20px;
+    font-size: 12px;
+}
+    .sub-menu {
+    position: absolute;
+    width: 150px;
+    border: 1px solid #ccc;
+    padding: 10px 0 10px 20px;
+    visibility: hidden;
+    top: 50px;
+    transition: 0.3s;
+    background-color: #fff;
+}
+.sub-menu ul {
+    padding-left: 20px;
+}
+.sub-menu ul a {
+    font-weight: bold;
+    font-size: 12px !important;
+}
+.others {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+}
+.others > li {
+    padding: 0 12px;
+    position: relative;
+}
+.others > li:first-child input {
+    width: 200px;
+    padding: 5px 30px 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+.others > li:first-child i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+.others > li > a {
+    font-size: 18px;
+    color: #333;
+    padding: 5px;
+}
+.others > li > a:hover {
+    color: #007bff;
+        }
+.aspect-ratio-169 {
+    display: block;
+    position: relative;
+    padding-top: 56.25%;
+    transition: 0.3s;
+        }
+.aspect-ratio-169 img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+        }
+.dot-Container {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    margin-right: 12px;
+    justify-content: center;
+        }
+#Slider {
+    padding-bottom: 30px;
+    overflow: hidden;
+    border-bottom: 2px solid #000;
+    position: relative;
+        }
+.dot {
+    height: 16px;
+    width: 16px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 12px;
+    cursor: pointer;
+        }
+.dot:active {
+background-color: #333;
+}

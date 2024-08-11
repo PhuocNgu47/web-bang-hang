@@ -109,7 +109,7 @@
     border-radius: 5px;
     display: none;
     animation: fadeIn ease-in 0.3s;
-
+    box-shadow: 0 1px  2px  rgba(0, 0, 0, 0.1);
 }
 
 .header_qr::before {
@@ -328,6 +328,7 @@
 
 }
 
+
 .header__search-select-label-icon {
     font-size: 1.4rem;
     color: #666;
@@ -382,7 +383,9 @@
     overflow: hidden;
 
     display: none;
+    z-index: 1;
 }
+
 
 .header__search-history-heading {
     margin: 6px 12px;
@@ -420,7 +423,7 @@
 /* App container*/
 .app__container {
     background-color: var(--contain-color);
-    padding-top: 24px;
+    padding-top: 36px;
 }   
 
 .app__conten {
@@ -443,10 +446,12 @@
 }
 
 .category__heading {
-    font-size: 1.5rem;
-    padding: 10px 16px;
-    border-bottom: 1px solid#666;
+    font-weight: 400;
+    font-size: 1.6rem;
+    padding: 16px 16px 0 ;
+    /* border-bottom: 1px solid#666; */
     margin-top: 0;
+    text-transform: uppercase;
 }
 
 .category__heading-icon {
@@ -454,10 +459,30 @@
     margin-right: 4px;
 }
 
-.categoty-list {
+.category-list {
     list-style: none;
+    
     padding: 0 0 8px 0;
+   
 }
+
+.category-item {
+    position: relative;
+}
+
+.category-item:first-child:before {
+    display: none;
+}
+
+.category-item::before {
+    content: "";
+    border-top: 1px solid #e1e1e1;
+    
+    position: absolute;
+    top: 0;
+    left: 20px;
+    right: 20px;
+}   
 
 .category-item-active .category-item-link  {
     color: var(--primary-color);
@@ -481,7 +506,7 @@
     text-decoration: none;
     color: var(--text-color);
     font-size: 1.5rem;
-    padding: 8px 16px;
+    padding: 8px 20px;
     display: block;
     transition: right  linear 0.1s ;
 
@@ -569,9 +594,21 @@
 
 /* product */
 .home-product-item {
+    display: block;
     background-color: var(--white--color);
     margin-top: 10px;
+    text-decoration: none;
     position: relative;
+    border-radius: 2px;
+
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    transition: transform linear 0.1s;
+    will-change: transform;
+}
+
+.home-product-item:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.1);
 }
 
 .home-product-item__img {
@@ -580,6 +617,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center ;
+    border-top-left-radius: 2px ;
+    border-top-right-radius: 2px ;
+    
 }
 
 
@@ -674,7 +714,7 @@ i.home-product-item__like-icon-fill {
 
 }
 
-.home-product-item__favourite {
+.home-product-item__favorite {
     position: absolute;
     top: 10px;
     left: -4px;
@@ -691,7 +731,7 @@ i.home-product-item__like-icon-fill {
 
 }
 
-.home-product-item__favourite::after {
+.home-product-item__favorite::after {
     content: "";
     position: absolute;
     left: 0;
@@ -701,11 +741,11 @@ i.home-product-item__like-icon-fill {
     filter: brightness(60%);
 }
 
-.home-product-item__favourite span {
+.home-product-item__favorite span {
     color: var(--white--color);
 }
 
-.home-product-item__favourite i {
+.home-product-item__favorite i {
     color: var(--white--color);
     font-size: 0.9rem;
     margin: 0 2px 0 5px;
@@ -752,4 +792,169 @@ i.home-product-item__like-icon-fill {
     font-weight: 600;
 }
 
+.home-product__pagination {
+    margin: 48px 0 32px;
+
+}
+
+
+/* footer*/
+
+.footer {
+    border-top: 4px solid var(--primary-color);
+    padding: 16px;
+}
+
+.footer__heading {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.footer--list {
+    padding-left: 0;
+    list-style: none;
+}
+
+.footer-item__link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #737373;
+    padding: 2px 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-item__link:hover {
+    color: var(--primary-color);
+}
+
+.footer-item__link i {
+    font-size: 1.8rem;
+    margin:-1px 8px 0 0 ;
+}
+
+
+.footer--page__img {
+    width: 180px;
+    border: 1px solid var(--primary-color);
+}
+
+
+/* footer bottom*/
+/* 
+.footer__bottom {
+    padding-top: 8px 0;
+    background-color: #f5f5f5f5;
+    margin-top: 36px;
+    
+
+}
+
+.footer__text {
+    margin: 0;
+    text-align: center;
+    font-size: 1.4rem;
+    display: block;
+} */
+
+/* Footer bottom styling */
+.footer__bottom {
+    padding: 8px 0; /* Chỉnh sửa padding */
+    background-color: #f1f1f1; /* Tông màu sáng hơn và dịu mắt hơn */
+    margin-top: 36px;
+    border-top: 1px solid #e0e0e0; /* Thêm đường viền nhẹ trên cùng */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ cho cảm giác nổi */
+}
+
+.footer__text {
+    margin: 0;
+    text-align: center;
+    font-size: 1.4rem;
+    display: block;
+    color: #333; /* Màu chữ sẫm để dễ đọc hơn */
+    font-weight: 400; /* Độ đậm của font */
+    letter-spacing: 0.5px; /* Tăng khoảng cách giữa các chữ */
+    line-height: 1.8rem; /* Khoảng cách giữa các dòng chữ */
+}
+
+
+
+
+/*----------------------home-banners-------------------------------------*/
+
+/* .home-banners {
+    height: 235px;
+    background-color: var(--primary-color);
+    display: flex;
+}
+
+.home-banners 
+.img-trai__00 {
+    
+    height: 235px;
+
+    
+}
+
+.phai{
+    height: 71px;
+    width: 400px;
+    align-items: center;
+    text-align: center;
+}
+
+.img-phai__1 {
+    width: 100%;
+}
+
+.img-phai__2 {
+    width: 100%;
+
+} */
+
+.home-banners {
+    height: 235px;
+    background-color: var(--contain-color);
+    display: flex;
+    gap: 10px; /* Khoảng cách giữa các hình ảnh */
+}
+
+.trai {
+    flex: 1;
+    overflow: hidden; /* Đảm bảo hình ảnh không vượt quá khung */
+}
+
+.img-trai__00 {
+    height: 100%; /* Chiều cao bằng với .trai */
+    width: 100%; /* Chiều rộng đầy đủ */
+    object-fit: cover; /* Đảm bảo hình ảnh bao phủ toàn bộ khung */
+    border-radius: 4px; /* Bo tròn các góc cho đẹp */
+}
+
+.phai {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Căn chỉnh đều khoảng cách giữa các ảnh */
+    gap: 10px;
+    flex: 0 0 400px; /* Chiều rộng cố định 400px */
+}
+
+.img-phai__1,
+.img-phai__2 {
+    width: 100%;
+    height: 112.5px; /* Mỗi ảnh chiếm một nửa chiều cao của .phai */
+    object-fit: cover;
+    border-radius: 4px; /* Bo tròn các góc */
+    
+}
+
+
+/*Ifame web...........................*/
+
+.iframe-content {
+    width: 100%;
+    height: 800px;
+    border: none;
+}
 
